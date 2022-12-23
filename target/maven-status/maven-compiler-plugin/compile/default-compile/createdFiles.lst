@@ -1,0 +1,5 @@
+generic\ApiUtil.class
+configreader\FileReaderManager.class
+configreader\PropertyFileReader.class
+generic\Hooks.class
+generic\RestAssuredExtension.class

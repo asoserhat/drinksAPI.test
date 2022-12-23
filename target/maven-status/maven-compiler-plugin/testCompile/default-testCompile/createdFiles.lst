@@ -1,0 +1,9 @@
+utilities\CucumberRunnerTest.class
+utilities\DailyRunner.class
+stepdefinition\Practice.class
+utilities\ExcelReaderWriter.class
+stepdefinition\genericSteps.class
+utilities\RegressionRunner.class
+stepdefinition\CommonSteps.class
+TestNGSteps\DBComparisonManually.class
+stepdefinition\DemoSteps.class
