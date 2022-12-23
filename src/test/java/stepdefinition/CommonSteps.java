@@ -216,13 +216,16 @@ public class CommonSteps {
 			
 		}
 		
-		System.out.println("Values for below objects found NULL for endpoint:"+endPoint+" which is not expected!!!");
-		for(String obs : drinksFailures) {
-			System.out.println(" !!! "+ obs +" !!! ");
-		}
+		
 		
 		
 		if(!drinksFailures.isEmpty()) {
+			
+			System.out.println("Values for below objects found NULL for endpoint:"+endPoint+" which is not expected!!!");
+			for(String obs : drinksFailures) {
+				System.out.println(" !!! "+ obs +" !!! ");
+			}
+			
 	     	String excelPath = System.getProperty("user.dir") + "\\src\\test\\resources\\excels\\" + endPoint.substring(endPoint.indexOf("=")) + ".xlsx";
 		    erw.writeExcel(excelPath,"Sheet1",drinksFailures);
 		}
