@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 23, 2022 02:42:30 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 27, 2023 03:25:11 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -64,7 +64,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -76,7 +76,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@drinks</a></li>
+					<li><a href='#'>@todos</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -118,12 +118,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
+                    <span class='strong'>0</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -136,12 +136,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>6</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
+                    <span class='strong'>0</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    1</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -156,12 +156,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>21</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='66%'>
+                    <span class='strong'>2</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='33%'>
+                    1</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -184,11 +184,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Drinks</span>
-						<span class='test-time'>Dec 23, 2022 02:42:31 AM</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>Todos</span>
+						<span class='test-time'>Jan 27, 2023 03:25:11 PM</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -199,183 +199,40 @@
 </div>
 	<div class='test-desc'>  I want to use this template for my feature file</div>
 
-<div class='scenario outline node' test-id='2' status='Pass'>
+<div class='scenario outline node' test-id='2' status='Fail'>
 
-	<span class='duration right label'>00 00 03.310</span>
+	<span class='duration right label'>00 00 00.022</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Assestment 1</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Accumulus 1</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>API</td><td>EndPoint</td><td>Code</td></tr><tr><td>api/json/v1/1/</td><td>search.php?i=margarita</td><td>200</td></tr><tr><td>api/json/v1/1/</td><td>search.php?i=vodka</td><td>200</td></tr><tr><td>api/json/v1/1/</td><td>search.php?i=MARGARITA</td><td>200</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>API</td><td>EndPoint</td><td>Code</td><td>String</td></tr><tr><td>/</td><td>todosv2</td><td>200</td><td>Finish the Accumulus coding challenge</td></tr></table></div>
 	
 		<div class='category-list'>
-				<span class='category label'>@drinks</span>
+				<span class='category label'>@todos</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='3' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Assestment 1</div>
+		<li test-id='3' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Accumulus 1</div>
 
 				<div class='category-list'>
-						<span class='category label'>@drinks</span>
+						<span class='category label'>@todos</span>
 				</div>
 
 			<ul class='gc steps'>
 				<li test-id='4' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.I_make_a_get_call_to_EndPoint_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I make a GET call to "api/json/v1/1/" to "search.php?i=margarita"</h6>
+					<h6 class="step-name" title="stepdefinition.CommonSteps.I_make_a_get_call_to_EndPoint_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I make a GET call to "/" to "todosv2"</h6>
 
 				</li>
 				<li test-id='5' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="stepdefinition.CommonSteps.verify_that_status_code(int)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I verify that status code is equal to 200</h6>
 
 				</li>
-				<li test-id='6' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.i_verify_below_assets_from_the_jasonpaths_are_exist_and_as_required(java.lang.String,io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify below assets from the jasonpaths: "$.ingredients[0]." are exist and as required</h6>
+				<li test-id='6' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title=""><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And I verify response has todo values as required and contains "Finish the Accumulus coding challenge"</h6>
 
-							<div class="node-step"><table class='markup-table table '><tr><td>idIngredient</td><td>String</td></tr><tr><td>strIngredient</td><td>String</td></tr><tr><td>strDescription</td><td>String</td></tr><tr><td>strAlcohol</td><td>String</td></tr><tr><td>strABV</td><td>String</td></tr></table></div>
-				</li>
-				<li test-id='7' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.i_verify_consistency_between_assets_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify consistency between assets: "$.ingredients[0].strAlcohol" and "$.ingredients[0].strABV"</h6>
-
-				</li>
-			</ul>
-		</li>
-		<li test-id='8' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Assestment 1</div>
-
-				<div class='category-list'>
-						<span class='category label'>@drinks</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='9' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.I_make_a_get_call_to_EndPoint_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I make a GET call to "api/json/v1/1/" to "search.php?i=vodka"</h6>
-
-				</li>
-				<li test-id='10' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.verify_that_status_code(int)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I verify that status code is equal to 200</h6>
-
-				</li>
-				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.i_verify_below_assets_from_the_jasonpaths_are_exist_and_as_required(java.lang.String,io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify below assets from the jasonpaths: "$.ingredients[0]." are exist and as required</h6>
-
-							<div class="node-step"><table class='markup-table table '><tr><td>idIngredient</td><td>String</td></tr><tr><td>strIngredient</td><td>String</td></tr><tr><td>strDescription</td><td>String</td></tr><tr><td>strAlcohol</td><td>String</td></tr><tr><td>strABV</td><td>String</td></tr></table></div>
-				</li>
-				<li test-id='12' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.i_verify_consistency_between_assets_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify consistency between assets: "$.ingredients[0].strAlcohol" and "$.ingredients[0].strABV"</h6>
-
-				</li>
-			</ul>
-		</li>
-		<li test-id='13' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Assestment 1</div>
-
-				<div class='category-list'>
-						<span class='category label'>@drinks</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='14' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.I_make_a_get_call_to_EndPoint_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I make a GET call to "api/json/v1/1/" to "search.php?i=MARGARITA"</h6>
-
-				</li>
-				<li test-id='15' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.verify_that_status_code(int)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I verify that status code is equal to 200</h6>
-
-				</li>
-				<li test-id='16' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.i_verify_below_assets_from_the_jasonpaths_are_exist_and_as_required(java.lang.String,io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify below assets from the jasonpaths: "$.ingredients[0]." are exist and as required</h6>
-
-							<div class="node-step"><table class='markup-table table '><tr><td>idIngredient</td><td>String</td></tr><tr><td>strIngredient</td><td>String</td></tr><tr><td>strDescription</td><td>String</td></tr><tr><td>strAlcohol</td><td>String</td></tr><tr><td>strABV</td><td>String</td></tr></table></div>
-				</li>
-				<li test-id='17' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.i_verify_consistency_between_assets_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify consistency between assets: "$.ingredients[0].strAlcohol" and "$.ingredients[0].strABV"</h6>
-
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenario outline node' test-id='18' status='Pass'>
-
-	<span class='duration right label'>00 00 01.886</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Assestment 2</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>API</td><td>EndPoint</td><td>Code</td></tr><tr><td>api/json/v1/1/</td><td>search.php?s=margarita</td><td>200</td></tr><tr><td>api/json/v1/1/</td><td>search.php?s=vodka</td><td>200</td></tr><tr><td>api/json/v1/1/</td><td>search.php?s=kola</td><td>200</td></tr></table></div>
-	
-		<div class='category-list'>
-				<span class='category label'>@drinks</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='19' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Assestment 2</div>
-
-				<div class='category-list'>
-						<span class='category label'>@drinks</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='20' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.I_make_a_get_call_to_EndPoint_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I make a GET call to "api/json/v1/1/" to "search.php?s=margarita"</h6>
-
-				</li>
-				<li test-id='21' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.verify_that_status_code(int)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I verify that status code is equal to 200</h6>
-
-				</li>
-				<li test-id='22' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.i_verify_below_schema_from_the_jasonarray_are_exist_and_as_required(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify below schema in "search.php?s=margarita" from the jasonarray: "$.drinks" is exist and as required</h6>
-
-							<div class="node-step"><table class='markup-table table '><tr><td>strDrink</td><td>notNullable</td></tr><tr><td>strDrinkAlternate</td><td>Nullable</td></tr><tr><td>strTags</td><td>notNullable</td></tr><tr><td>strCategory</td><td>notNullable</td></tr><tr><td>strIBA</td><td>Nullable</td></tr><tr><td>strAlcoholic</td><td>notNullable</td></tr><tr><td>strGlass</td><td>notNullable</td></tr><tr><td>strInstructions</td><td>notNullable</td></tr><tr><td>strDrinkThumb</td><td>Nullable</td></tr><tr><td>strIngredient1</td><td>notNullable</td></tr><tr><td>strMeasure1</td><td>notNullable</td></tr><tr><td>strImageSource</td><td>Nullable</td></tr><tr><td>strImageAttribution</td><td>Nullable</td></tr><tr><td>strCreativeCommonsConfirmed</td><td>notNullable</td></tr><tr><td>dateModified</td><td>notNullable</td></tr></table></div>
-				</li>
-			</ul>
-		</li>
-		<li test-id='23' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Assestment 2</div>
-
-				<div class='category-list'>
-						<span class='category label'>@drinks</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='24' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.I_make_a_get_call_to_EndPoint_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I make a GET call to "api/json/v1/1/" to "search.php?s=vodka"</h6>
-
-				</li>
-				<li test-id='25' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.verify_that_status_code(int)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I verify that status code is equal to 200</h6>
-
-				</li>
-				<li test-id='26' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.i_verify_below_schema_from_the_jasonarray_are_exist_and_as_required(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify below schema in "search.php?s=vodka" from the jasonarray: "$.drinks" is exist and as required</h6>
-
-							<div class="node-step"><table class='markup-table table '><tr><td>strDrink</td><td>notNullable</td></tr><tr><td>strDrinkAlternate</td><td>Nullable</td></tr><tr><td>strTags</td><td>notNullable</td></tr><tr><td>strCategory</td><td>notNullable</td></tr><tr><td>strIBA</td><td>Nullable</td></tr><tr><td>strAlcoholic</td><td>notNullable</td></tr><tr><td>strGlass</td><td>notNullable</td></tr><tr><td>strInstructions</td><td>notNullable</td></tr><tr><td>strDrinkThumb</td><td>Nullable</td></tr><tr><td>strIngredient1</td><td>notNullable</td></tr><tr><td>strMeasure1</td><td>notNullable</td></tr><tr><td>strImageSource</td><td>Nullable</td></tr><tr><td>strImageAttribution</td><td>Nullable</td></tr><tr><td>strCreativeCommonsConfirmed</td><td>notNullable</td></tr><tr><td>dateModified</td><td>notNullable</td></tr></table></div>
-				</li>
-			</ul>
-		</li>
-		<li test-id='27' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Assestment 2</div>
-
-				<div class='category-list'>
-						<span class='category label'>@drinks</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='28' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.I_make_a_get_call_to_EndPoint_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I make a GET call to "api/json/v1/1/" to "search.php?s=kola"</h6>
-
-				</li>
-				<li test-id='29' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.verify_that_status_code(int)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I verify that status code is equal to 200</h6>
-
-				</li>
-				<li test-id='30' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepdefinition.CommonSteps.i_verify_below_schema_from_the_jasonarray_are_exist_and_as_required(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify below schema in "search.php?s=kola" from the jasonarray: "$.drinks" is exist and as required</h6>
-
-							<div class="node-step"><table class='markup-table table '><tr><td>strDrink</td><td>notNullable</td></tr><tr><td>strDrinkAlternate</td><td>Nullable</td></tr><tr><td>strTags</td><td>notNullable</td></tr><tr><td>strCategory</td><td>notNullable</td></tr><tr><td>strIBA</td><td>Nullable</td></tr><tr><td>strAlcoholic</td><td>notNullable</td></tr><tr><td>strGlass</td><td>notNullable</td></tr><tr><td>strInstructions</td><td>notNullable</td></tr><tr><td>strDrinkThumb</td><td>Nullable</td></tr><tr><td>strIngredient1</td><td>notNullable</td></tr><tr><td>strMeasure1</td><td>notNullable</td></tr><tr><td>strImageSource</td><td>Nullable</td></tr><tr><td>strImageAttribution</td><td>Nullable</td></tr><tr><td>strCreativeCommonsConfirmed</td><td>notNullable</td></tr><tr><td>dateModified</td><td>notNullable</td></tr></table></div>
+							<div class="node-step">Step undefined</div>
 				</li>
 			</ul>
 		</li>
@@ -425,15 +282,15 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@drinks</span>
+						<span class='category-name'>@todos</span>
 						<span class='category-status right'>
-						<span class='label pass'>8</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 8</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -447,44 +304,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 23, 2022 02:42:31 AM</td>
-										<td class='linked' test-id='2'>Assestment 1</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jan 27, 2023 03:25:11 PM</td>
+										<td class='linked' test-id='2'>Accumulus 1</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 									<tr>
-										<td>Dec 23, 2022 02:42:31 AM</td>
-										<td class='linked' test-id='3'>Assestment 1</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Dec 23, 2022 02:42:34 AM</td>
-										<td class='linked' test-id='8'>Assestment 1</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Dec 23, 2022 02:42:34 AM</td>
-										<td class='linked' test-id='13'>Assestment 1</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Dec 23, 2022 02:42:34 AM</td>
-										<td class='linked' test-id='18'>Assestment 2</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Dec 23, 2022 02:42:34 AM</td>
-										<td class='linked' test-id='19'>Assestment 2</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Dec 23, 2022 02:42:35 AM</td>
-										<td class='linked' test-id='23'>Assestment 2</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Dec 23, 2022 02:42:36 AM</td>
-										<td class='linked' test-id='27'>Assestment 2</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jan 27, 2023 03:25:11 PM</td>
+										<td class='linked' test-id='3'>Accumulus 1</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -514,31 +341,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>21</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 23, 2022 02:42:30 AM</div>
+					<div class='panel-lead'>Jan 27, 2023 03:25:11 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 23, 2022 02:42:36 AM</div>
+			 		<div class='panel-lead'>Jan 27, 2023 03:25:12 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 05.995</div>
+					<div class='panel-lead'>00 00 00.723</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -554,12 +381,12 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@drinks</td>
-							<td>8</td>
+							<td>@todos</td>
 							<td>0</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -574,23 +401,23 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 6,
-				passChild: 6,
-				failChild: 0,
+				childCount: 1,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 21,
-				passGrandChild: 21,
-				failGrandChild: 0,
+				grandChildCount: 3,
+				passGrandChild: 2,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
@@ -601,7 +428,7 @@
 		
 		<script>
 			var timeline = {
-			        "Drinks":5.209
+			        "Todos":0.027
 			};
 		</script>
 		

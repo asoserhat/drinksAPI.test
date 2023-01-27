@@ -231,6 +231,49 @@ public class CommonSteps {
 		}
 	}
 	
+	@Then("I size of the JSONArray is equal to {int}")
+	public void i_size_of_the_json_array_is_equal_to(Integer int1) {
+		String responseBody = response.getBody().prettyPrint().toString();
+		JSONArray jsonArray = new JSONArray(responseBody);
+		int expected = int1;
+		int actual = jsonArray.length();
+		Assert.assertEquals(actual, expected);
+		
+	}
+
+	
+	@Then("I verify response has todo values as required and contains {string}")
+	public void i_verify_response_has_todo_values_as_required_and_contains(String string) {
+	   
+		String responseBody = response.getBody().prettyPrint().toString();
+		JSONArray jsonArray = new JSONArray(responseBody);
+		
+		for(Object obj : jsonArray ) {
+			
+			JSONObject jso = new JSONObject(obj.toString());
+			
+			JSONArray jsaTemp = jso.getJSONArray("todos");
+			int jsaTempSize = jsaTemp.length();
+			
+			for(int i = 0 ; i<jsaTempSize ; i++) {
+				
+				String value =jsaTemp.getJSONObject(i).getString("todo");
+				
+				System.out.println(value);
+				
+				boolean expected = true;
+				boolean actual = value.contains(string);
+				
+				Assert.assertEquals(actual, expected);
+				
+			}
+			
+			
+		}
+
+		
+	}
+
 	
 	
 

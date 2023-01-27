@@ -16,10 +16,8 @@ Feature: Drinks
      
      Examples: 
       | API  | EndPoint | Code |
-      | api/json/v1/1/ | search.php?i=margarita | 200 |
-      | api/json/v1/1/ | search.php?i=vodka | 200 |
-      | api/json/v1/1/ | search.php?i=MARGARITA | 200 |
-
+      | todos | /v1 | 200 |
+     
  
    @drinks
   Scenario Outline: Assestment 2

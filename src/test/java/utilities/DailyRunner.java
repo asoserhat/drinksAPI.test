@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		,plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
         ,monochrome = true
         , dryRun = false
-        , tags= " @drinks")
+        , tags= " @todos")
 public class DailyRunner {
 
 }
